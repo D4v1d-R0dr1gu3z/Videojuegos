@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Estilos de la cabecera */
+header{
+    width: 100%;
+    padding:40px 0 0 0;
+    background:url("../img/bg-header.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+header nav{
+    width: 100%;
+    height: 73px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000000da;
+}
+.barra {
+background-color: #000000da;
+border: 1px solid #000000da;
+padding: 5px;
+position: relative; 
+}
+
+.toggle-input {
+display: none; 
+}
+.toggle-label {
+font-size: 20px;
+cursor: pointer;
+color: #fff;
+}
+.toggle-label p{
+font-size: 40px;
+}
+.toggle-label p,
+.toggle-label span {
+    display: inline; /* Establece la visualización en línea para ambos elementos */
+}
+.contenido {
+display: block;
+width: max-content;
+max-height: 0;
+overflow: hidden;
+position: absolute;
+top: 100%; 
+left: 0;
+right: 0;
+background-color: #000;
+color: #fff;
+transition: max-height 1s ease;
+}
+
+.toggle-input:checked ~ .contenido {
+max-height: 1000px; 
+}
+
+#desplegable{
+    display:block ;
+}
+header nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 15px;
+    
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20;
+    font-weight: 400;
+    transition: .3s;
+}
+nav li a:hover{
+    border-bottom: 3px solid orange;
+    border-top: 3px solid orange;
+}
+#logo{
+    transition: .5s;
+}
+#logo:hover{
+    transform: scale(1.2);
+}
+
+#hero{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto; /* centrar contenedor */
+    padding-top: 200px;
+}
+#hero img {
+    border-radius:15px ;
+}
+#hero h2 {
+    font-size: 60px;
+    color: orange;
+}
+#hero h1 {
+    font-size: 30px ;
+    color: #fff;
+    font-weight: 400;
+    text-transform:uppercase;
+    margin-bottom: 30px;
+}
+#hero p{
+    font-size: 15px ;
+    color: #fff;
+    background-color: #00000052;
+    width:50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+#hero button{
+    background-color: orange;
+    font-size: 30px;
+    padding: 12px 30px;
+    border-radius: 14px;
+    color: #000;
+    border-color: transparent;
+    cursor: pointer;
+    transition: .5s;
+}
+#hero button:hover{
+    transform: scale(0.9);
+    background: #000000bb;
+    color: orange;
+}
+/* ESTILOS NOTICIAS */
+main{
+    width: 100%;
+    position: relative;
+}
+#noticias{
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    
+}
+#noticias h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+#noticias p{
+    font-size: 22px;
+}
+#noticias .fila{
+    padding: 80px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; /* alinear horizontalmente los elementos */
+}
+#noticias .con-not{
+    position: relative;
+}
+#noticias .con-not h3{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: yellow;
+}
+#noticias .con-not img{
+    transition: .5s;
+}
+#noticias .con-not img:hover{
+    transform: scale(0.95);
+}
+/* ESTILOS ANALISIS */
+
+
+
+footer{
+    width: 100%;
+    position: relative;
+    background: #000;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer p,footer h3 {
+    color: #fff;
+}
+/* TABLETS IPADS */
+@media screen and (min-width:768px) and (max-width: 990px) {   
+   
+}
+/* SMARTPHONES*/
+@media screen and (min-width:320px) and (max-width: 767px) {   
+    header nav{
+        display: block;
+        text-align: center;
+        width: 96%;
+    }
+    header nav ul{
+        margin-top: 30px;
+    }
+    header nav a{
+        font-size: 20px;
+    }
+    #hero h2{
+        font-size: 36px;
+    }
+    #hero h1{
+        font-size: 26px;
+    }
+    #hero button{
+        font-size: 18px;
+        padding: 8px 14px;
+    }
+    #planes .fila{
+        display:block
+    }
+    #planes h3{
+        font-size: 36px;
+    }
+    #planes p{
+        font-size: 16px;
+    }
+    #planes .col-plan{
+        margin-bottom: 30px;
+    }
+    #destinos .fila{
+        display: block;
+
+    }
+    #contactos.fila{
+        display: block;
+    }
+    #contactos input,
+    #contactos select{
+        width: 100%;
+        display: block;
+    }
+}
+
