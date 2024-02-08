@@ -144,49 +144,205 @@ main{
     width: 100%;
     position: relative;
 }
+#news{
+    width: 63%;
+    padding: 100px 150px;
+    margin: 0 auto;
+    background: #bebebe;
+}
 #noticias{
     width: 100%;
-    background: #fff;
-    text-align: center;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    
+    background: #000;   
+}
+#noticias hr{
+    color: #000;
+    border:1px solid #000;
 }
 #noticias h2{
     font-size: 50px;
-    margin-bottom: 50px;
+    color: orange;
+    text-align: left ;
 }
 #noticias p{
     font-size: 22px;
 }
 #noticias .fila{
-    padding: 80px;
-    width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around; /* alinear horizontalmente los elementos */
+    justify-content: space-between; 
 }
-#noticias .con-not{
+#noticias .fila h3{
+    text-transform:uppercase; 
+}
+#con-not{
+    padding-right: 150px;
     position: relative;
+    text-align: left;
 }
-#noticias .con-not h3{
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: yellow;
-}
-#noticias .con-not img{
+#not-img{
     transition: .5s;
 }
-#noticias .con-not img:hover{
+#not-img:hover{
     transform: scale(0.95);
 }
 /* ESTILOS ANALISIS */
+main{
+    width: 100%;
+    position: relative;
+}
+#analitics{
+    width: 63%;
+    padding: 100px 150px;
+    margin: 0 auto;
+    background: #d1fdfb;
+}
+#analisis{
+    width: 100%;
+    background:url("../img/bg-analisis.png");
+    background-size: cover;
+    background-position: center;
+}
+#analisis h2{
+    font-size: 50px;
+    color:rgb(0, 238, 255);
+    text-align: left ;
+}
+#analisis p{
+    font-size: 22px;
+}
+#analisis .fila h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform:uppercase; 
+}
+#con-ana{
+    position: relative;
+    text-align: left;
+}
+#ana-img{
+    padding-top: 30px;
+    transition: .5s;
+}
+#ana-img:hover{
+    transform: scale(0.95);
+}
+/* GUIAS Y TRUCOS */
+main{
+    width: 100%;
+    position: relative;
+}
+#guides{
+    width: 63%;
+    padding: 100px 150px;
+    margin: 0 auto;
+    background: #bebebe;
+}
+#guides hr{
+    color: #000;
+    border:1px solid #000;
+}
+#guiasytrucos{
+    width: 100%;
+    background:#000;
+    background-size: cover;
+    background-position: center;
+}
+#guiasytrucos h2{
+    font-size: 50px;
+    color:orange;
+    text-align: left ;
+}
+#guiasytrucos p{
+    font-size: 22px;
+}
+#guiasytrucos .fila{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+}
+#guiasytrucos .fila h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform:uppercase; 
+}
+#con-gyt{
+    position: relative;
+    text-align: left;
+    padding-right: 150px;
+}
+#gyt-img{
+    padding-top: 30px;
+    transition: .5s;
+}
+#gyt-img:hover{
+    transform: scale(0.95);
+}
+footer{
+    width: 100%;
+    position: relative;
+    background: #000;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* Lanzamientos */
+main{
+    width: 100%;
+    position: relative;
+}
+#releases{
+    width: 63%;
+    padding: 100px 150px;
+    margin: 0 auto;
+    background: rgb(157, 203, 241);
+}
+#releases h3{   
+    color: blue;
+}
+#releases hr{
+    color: blue;
+    border:1px solid blue;
+}
+#lanzamientos{
+    width: 100%;
+    background:url("../img/bg-lanzamientos.png");
+    background-size: cover;
+    background-position: center;
+}
+#lanzamientos h2{
+    font-size: 50px;
+    color:blue;
+    text-align: left ;
+}
+#lanzamientos p{
+    font-size: 22px;
+}
+#lanzamientos .fila{
+    padding-top: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+}
+#lanzamientos .fila h3{
+    padding-bottom: 30px;
+    text-transform:uppercase; 
+}
 
+#con-lan{
+    position: relative;
+    text-align: left;
+    padding-left: 50px;}
+#con-lan h3{
+    color: #000;
+}
 
-
+#lant-img{
+    padding-top: 30px;
+    transition: .5s;
+}
+#lan-img:hover{
+    transform: scale(0.95);
+}
 footer{
     width: 100%;
     position: relative;
