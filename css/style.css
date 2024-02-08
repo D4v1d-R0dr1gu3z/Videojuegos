@@ -592,6 +592,9 @@ footer p,footer h3 {
     .toggle-input:checked ~ .contenido {
     max-height: 400px; 
     }
+    #hero{
+        padding-top: 70px;
+    }
     #hero img{
         width: 60px;
     }
@@ -602,11 +605,11 @@ footer p,footer h3 {
         font-size: 30px;
     }
     #hero p{
-        width: 80%;
-        font-size: 30px;
+        width: 100%;
+        font-size: 20px;
     }
     #hero button{
-        font-size: 38px;
+        font-size: 20px;
         padding: 8px 14px;
     }
     #news{
@@ -622,19 +625,19 @@ footer p,footer h3 {
         display:block;
     }
     #noticias h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     #noticias h3{
-        font-size: 30px;
+        font-size: 20px;
     }
     #noticias .fila p{
-        font-size: 30px;
+        font-size: 20px;
     }
     #noticias p{
-        font-size: 30px;
+        font-size: 20px;
     }
     #noticias .col-plan{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     #con-not{
         padding: 0%;
@@ -657,19 +660,19 @@ footer p,footer h3 {
         background-position: center;
     }
     #analisis h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     #analisis h3{
-        font-size: 30px;
+        font-size: 20px;
     }
     #analisis .fila p{
-        font-size: 30px;
+        font-size: 20px;
     }
     #analisis p{
-        font-size: 30px;
+        font-size: 20px;
     }
     #analisis .col-plan{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     #con-ana{
         padding: 0%;
@@ -687,19 +690,19 @@ footer p,footer h3 {
         display:block;
     }
     #guiasytrucos h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     #guiasytrucos h3{
-        font-size: 30px;
+        font-size: 20px;
     }
     #guiasytrucos .fila p{
-        font-size: 30px;
+        font-size: 20px;
     }
     #guiasytrucos p{
-        font-size: 30px;
+        font-size: 20px;
     }
     #guiasytrucos .col-plan{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     #con-gyt{
         padding: 0%;
@@ -726,26 +729,26 @@ footer p,footer h3 {
         display:block;
     }
     #lanzamientos h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     #lanzamientos h3{
-        font-size: 30px;
+        font-size: 20px;
     }
     #lanzamientos .fila{
         padding-top: 15px;
     }
     #lanzamientos .fila p{
         padding: 10px 0;
-        font-size: 30px;
+        font-size: 20px;
     }
     #lanzamientos .fila h3{
         padding: 10px 0;
     }
     #lanzamientos p{
-        font-size: 30px;
+        font-size: 20px;
     }
     #lanzamientos .col-plan{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     #con-lan{
         padding: 0%;
@@ -756,26 +759,26 @@ footer p,footer h3 {
         margin: 0 auto;
     }
     #ranking h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     #ranking h3{
-        font-size: 30px;
+        font-size: 20px;
     }
     #ranking .fila{
-        padding-top: 30px;
+        padding-top: 20px;
     }
     #ranking .fila p{
         padding: 10px 0;
-        font-size: 30px;
+        font-size: 20px;
     }
     #ranking .fila h3{
-        padding: 30px 0;
+        padding: 20px 0;
     }
     #ran-img img{
         width: 50px;
     }
     #ranking p{
-        font-size: 30px;
+        font-size: 20px;
     }
     #ranking .col-plan{
         margin-bottom: 30px;
@@ -798,10 +801,10 @@ footer p,footer h3 {
         margin: 0 auto;
     }
     #hardware h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     #hardware h3{
-        font-size: 30px;
+        font-size: 20px;
     }
     #hardware .fila{
         padding-top: 130px;
@@ -809,7 +812,7 @@ footer p,footer h3 {
     }
     #hardware .fila p{
         padding: 10px 0;
-        font-size: 30px;
+        font-size: 20px;
     }
     #hardware .fila h3{
         padding: 10px 0;
@@ -818,7 +821,7 @@ footer p,footer h3 {
         width: 200px;
     }
     #hardware p{
-        font-size: 30px;
+        font-size: 20px;
     }
     #hardware .col-plan{
         margin-bottom: 30px;
@@ -827,6 +830,6 @@ footer p,footer h3 {
         padding: 0%;
     }
     footer h3, footer p{
-        font-size: 35px;
+        font-size: 20px;
     }
 }
