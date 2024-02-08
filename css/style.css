@@ -152,7 +152,7 @@ main{
 }
 #noticias{
     width: 100%;
-    background: #000;   
+    background: #000; 
 }
 #noticias hr{
     color: #000;
@@ -196,6 +196,10 @@ main{
     margin: 0 auto;
     background: #d1fdfb;
 }
+#analitics hr{
+    color: rgb(0, 238, 255);
+    border:1px solid rgb(0, 238, 255);
+}
 #analisis{
     width: 100%;
     background:url("../img/bg-analisis.png");
@@ -219,12 +223,24 @@ main{
     position: relative;
     text-align: left;
 }
-#ana-img{
-    padding-top: 30px;
+#con-ana a {
+    text-decoration: none;
+    color: #000;
     transition: .5s;
 }
-#ana-img:hover{
-    transform: scale(0.95);
+#con-ana a :hover {
+    text-decoration: underline;
+}
+#con-ana p a{
+    color: #000;
+    text-decoration: none;
+    transition: .5s;
+}
+#con-ana p a :hover{
+    text-decoration: underline;
+}
+#ana-img{
+    padding-top: 30px;
 }
 /* GUIAS Y TRUCOS */
 main{
@@ -331,17 +347,179 @@ main{
 #con-lan{
     position: relative;
     text-align: left;
-    padding-left: 50px;}
+    padding-left: 50px;
+}
+#con-lan a {
+    text-decoration: none;
+    transition: 1s;
+}
+#con-lan a :hover{
+    text-decoration: underline;
+}
 #con-lan h3{
     color: #000;
 }
-
-#lant-img{
-    padding-top: 30px;
+footer{
+    width: 100%;
+    position: relative;
+    background: #000;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer p,footer h3 {
+    color: #fff;
+}
+/* Ranking */
+main{
+    width: 100%;
+    position: relative;
+}
+#top{
+    width: 63%;
+    padding: 100px 150px;
+    margin: 0 auto;
+    background: #bebebe;
+}
+#top h3{   
+    color: black;
+}
+#top  hr{
+    color: #0000;
+    border:1px solid #000;
+}
+#ranking{
+    width: 100%;
+    background:black;
+    background-size: cover;
+    background-position: center;
+}
+#ranking h2{
+    font-size: 50px;
+    color:orange;
+    text-align: left ;
+}
+#ranking p{
+    font-size: 22px;
+}
+#ranking .fila{
+    padding-top:10px ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+}
+#ranking .fila h3{
+    padding-bottom: 30px;
+    text-transform:uppercase; 
+}
+#ran-top{
+    text-align: center;
+    width: 10%;
+    padding: 0 10px;
+}
+#ran-top a{
+    color: #000;
+    text-decoration: none;
     transition: .5s;
 }
-#lan-img:hover{
-    transform: scale(0.95);
+#ran-top a :hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+#con-ran{    
+    width: 10%;
+    position: relative;
+    text-align: center;
+    padding-left: 50px;
+}
+#con-ran a {
+    text-decoration: none;
+    transition: 1s;
+}
+#con-ran a :hover{
+    text-decoration: underline;
+}
+#con-ran h3{
+    color: #000;
+}
+#ran-genero{
+    text-align: center;
+    width: 20%;
+    padding: 0 10px;
+}
+#ran-fecha{
+    text-align: center;
+    width: 20%;
+    padding: 0 10px;
+}
+footer{
+    width: 100%;
+    position: relative;
+    background: #000;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer p,footer h3 {
+    color: #fff;
+}
+/* hardware */
+main{
+    width: 100%;
+    position: relative;
+}
+#hardware1{
+    width: 63%;
+    padding: 100px 150px;
+    margin: 0 auto;
+    background: rgb(209, 160, 255);
+}
+#hardware1 h3{   
+    color: blueviolet;
+}
+#hardware1 hr{
+    color: blueviolet;
+    border:1px solid blueviolet;
+}
+#hardware{
+    width: 100%;
+    background:url("../img/bg-hardware.png");
+    background-size: cover;
+    background-position: center;
+}
+#hardware h2{
+    font-size: 50px;
+    color:blueviolet;
+    text-align: left ;
+}
+#hardware p{
+    font-size: 22px;
+}
+#hardware .fila{
+    padding: 15px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; 
+}
+#hardware .fila h3{
+    padding-bottom: 30px;
+    text-transform:uppercase; 
+}
+
+#con-har{
+    position: relative;
+    text-align: left;
+    padding-left: 50px;
+}
+#con-har a {
+    text-decoration: none;
+    transition: 1s;
+}
+#con-har a :hover{
+    text-decoration: underline;
+}
+#con-har h3{
+    color: #000;
 }
 footer{
     width: 100%;
@@ -359,51 +537,256 @@ footer p,footer h3 {
    
 }
 /* SMARTPHONES*/
-@media screen and (min-width:320px) and (max-width: 767px) {   
+@media screen and (min-width:320px) and (max-width: 1024px) { 
     header nav{
         display: block;
-        text-align: center;
+        text-align: left;
         width: 96%;
     }
     header nav ul{
         margin-top: 30px;
     }
     header nav a{
+        padding-left: 10px;
         font-size: 20px;
     }
+    header nav a img{
+        width: 100px;
+    }
+    .toggle-input {
+    display: none; 
+    }
+    .toggle-label {
+        padding-left: 10px;
+        font-size: 10px;
+        text-align: start;
+    }
+    .toggle-label p{
+        font-size: 15px;
+    }
+    .toggle-label p,
+    .toggle-label span {
+        display: inline; /* Establece la visualización en línea para ambos elementos */
+    }
+    .contenido {
+    display: block;
+    width: max-content;
+    height: 200px;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    transition:1s ease;
+    }
+    .contenido ul li a{
+        font-size: 10px;
+    }
+    .toggle-input:checked ~ .contenido {
+    max-height: 400px; 
+    }
+    #hero img{
+        width: 60px;
+    }
     #hero h2{
-        font-size: 36px;
+        font-size: 20px;
     }
     #hero h1{
-        font-size: 26px;
+        font-size: 20px;
+    }
+    #hero p{
+        width: 80%;
+        font-size: 10px;
     }
     #hero button{
         font-size: 18px;
         padding: 8px 14px;
     }
-    #planes .fila{
-        display:block
+    #news{
+        padding: 10px;
+        margin: 0 auto;
     }
-    #planes h3{
-        font-size: 36px;
+    #noticias .fila{
+        display:block;
     }
-    #planes p{
+    #noticias h2{
+        font-size: 15px;
+    }
+    #noticias h3{
+        font-size: 10px;
+    }
+    #noticias .fila p{
+        font-size: 8px;
+    }
+    #noticias p{
         font-size: 16px;
     }
-    #planes .col-plan{
+    #noticias .col-plan{
         margin-bottom: 30px;
     }
-    #destinos .fila{
-        display: block;
-
+    #con-not{
+        padding: 0%;
     }
-    #contactos.fila{
+    img{
+        padding: 5px 0;
+        width: 250px;
+    }
+    #analitics{
+        padding: 10px;
+        margin: 0 auto;
+    }
+    #analisis .fila{
+        display:block;
+    }
+    #analisis h2{
+        font-size: 15px;
+    }
+    #analisis h3{
+        font-size: 10px;
+    }
+    #analisis .fila p{
+        font-size: 8px;
+    }
+    #analisis p{
+        font-size: 16px;
+    }
+    #analisis .col-plan{
+        margin-bottom: 30px;
+    }
+    #con-ana{
+        padding: 0%;
+    }
+    #guides{
+        padding: 10px;
+        margin: 0 auto;
+    }
+    #guiasytrucos .fila{
+        display:block;
+    }
+    #guiasytrucos h2{
+        font-size: 15px;
+    }
+    #guiasytrucos h3{
+        font-size: 10px;
+    }
+    #guiasytrucos .fila p{
+        font-size: 8px;
+    }
+    #guiasytrucos p{
+        font-size: 16px;
+    }
+    #guiasytrucos .col-plan{
+        margin-bottom: 30px;
+    }
+    #con-gyt{
+        padding: 0%;
+    }
+    #releases{
+        padding: 10px;
+        margin: 0 auto;
+    }
+    #lan-img img {
+        height: 100px;
+        width: 60px;
+    }
+    #lanzamientos .fila{
+        display:block;
+    }
+    #lanzamientos h2{
+        font-size: 15px;
+    }
+    #lanzamientos h3{
+        font-size: 10px;
+    }
+    #lanzamientos .fila{
+        padding-top: 10px;
+    }
+    #lanzamientos .fila p{
+        padding: 10px 0;
+        font-size: 8px;
+    }
+    #lanzamientos .fila h3{
+        padding: 10px 0;
+    }
+    #lanzamientos p{
+        font-size: 16px;
+    }
+    #lanzamientos .col-plan{
+        margin-bottom: 30px;
+    }
+    #con-lan{
+        padding: 0%;
+    }
+    #top{
+        padding: 10px;
+        margin: 0 auto;
+    }
+    #ranking h2{
+        font-size: 15px;
+    }
+    #ranking h3{
+        font-size: 10px;
+    }
+    #ranking .fila{
+        padding-top: 10px;
+    }
+    #ranking .fila p{
+        padding: 10px 0;
+        font-size: 8px;
+    }
+    #ranking .fila h3{
+        padding: 10px 0;
+    }
+    #ran-img img{
+        width: 50px;
+    }
+    #ranking p{
+        font-size: 16px;
+    }
+    #ranking .col-plan{
+        margin-bottom: 30px;
+    }
+    #con-ran{
+        padding: 0%;
+    }
+    
+    #hardware1{
+        padding: 10px;
+        margin: 0 auto;
+    }
+    #hardware h2{
+        font-size: 15px;
+    }
+    #hardware h3{
+        font-size: 10px;
+    }
+    #hardware .fila{
+        padding-top: 10px;
         display: block;
     }
-    #contactos input,
-    #contactos select{
-        width: 100%;
-        display: block;
+    #hardware .fila p{
+        padding: 10px 0;
+        font-size: 8px;
+    }
+    #hardware .fila h3{
+        padding: 10px 0;
+    }
+    #har-img img{
+        width: 200px;
+    }
+    #hardware p{
+        font-size: 16px;
+    }
+    #hardware .col-plan{
+        margin-bottom: 30px;
+    }
+    #con-har{
+        padding: 0%;
+    }
+    footer h3, footer p{
+        font-size: 12px;
     }
 }
-
